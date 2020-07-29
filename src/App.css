@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+/* navbar */
+.avatar-nav {
+	background: url(https://www.gravatar.com/avatar/1234566?size=200&d=mm);
+	background-position: 50% 50%;
+	height: 40px;
+	width: 40px;
+	background-size: cover;
+	border-radius: 50%;
+	position: relative;
+}
+.avatar-nav img {
+	object-fit: cover;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.greenDot {
+	color: #03a84e;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 13px;
+}
+/* navbar */
+
+/* subjects */
+
+.subjects {
+	background-image: url("./assets/back.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 30px;
+	min-height: 100vh;
+	/* background: #333; */
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	font-family: sans-serif;
+	background-color: #f1f1f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subjects .card {
+	position: relative;
+	border-radius: 10px;
+	border: none;
+	background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subjects .card .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: 0.7s;
+	z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.subjects .Robotics .icon {
+	background: #e07768;
 }
 
-.App-link {
-  color: #61dafb;
+.subjects .Physics .icon {
+	background: #6eadd4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subjects .Mathematics .icon {
+	background: #4aada9;
 }
+.subjects .English .icon {
+	background: #ff9f1a;
+}
+.subjects .History .icon {
+	background: #fff200;
+}
+.subjects .Geography .icon {
+	background: #c56cf0;
+}
+
+.subjects .card .icon .fa {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 200px;
+	transition: 0.7s;
+	color: #fff;
+	opacity: 0.2;
+}
+.iconSubject {
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	top: 50px;
+	left: 140px;
+}
+
+h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 24px;
+	transition: 0.7s;
+	color: #fff;
+}
+
+.subjects .card .face {
+	width: 300px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.subjects .card .face.face1 {
+	position: relative;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(100px);
+}
+
+.subjects .card:hover .face.face1 {
+	background: #ff0057;
+	transform: translateY(0px);
+}
+
+.subjects .card .face.face1 .content {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.subjects .card:hover .face.face1 .content {
+	opacity: 1;
+}
+
+.subjects .card .face.face1 .content i {
+	max-width: 100px;
+}
+
+.subjects .card .face.face2 {
+	position: relative;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+	transform: translateY(-100px);
+}
+
+.subjects .card:hover .face.face2 {
+	transform: translateY(0);
+}
+
+.subjects .card .face.face2 .content p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #414141;
+}
+
+.subjects .card .face.face2 .content h3 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	color: #414141;
+}
+
+.subjects a {
+	text-decoration: none;
+	color: #414141;
+}
+/* subjects */
+
+/* course */
+.nav-item:hover {
+	cursor: pointer;
+}
+.headingCourse {
+	background-image: url("./assets/back.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* course */
